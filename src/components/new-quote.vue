@@ -14,6 +14,8 @@
 </template>
 
 <script>
+	import axios from 'axios';
+
 	export default {
 		data() {
 			return {
@@ -22,7 +24,13 @@
 		},
 		methods: {
 			onSubmitted() {
-				
+				axios.post('http://penktas.app/api/quote', {content: this.quoteContent})
+				.then(
+						(response) => console.log(response)
+					)
+				.catch(
+						(error) => console.log(error)
+					);
 			}
 		}
 	}
