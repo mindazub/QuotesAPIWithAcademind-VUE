@@ -5,7 +5,8 @@
           <div class="row">
             <div class="col-xs-12">
               <router-link to="/">Quotes</router-link>&nbsp&nbsp|&nbsp&nbsp
-              <router-link to="/new-quote">New Quote</router-link>
+              <router-link to="/new-quote">New Quote</router-link>&nbsp&nbsp|&nbsp&nbsp
+              <router-link to="/signup">Signup</router-link>
             </div>            
           </div>
           <hr>
