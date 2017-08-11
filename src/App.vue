@@ -6,7 +6,8 @@
             <div class="col-xs-12">
               <router-link to="/">Quotes</router-link>&nbsp&nbsp|&nbsp&nbsp
               <router-link to="/new-quote">New Quote</router-link>&nbsp&nbsp|&nbsp&nbsp
-              <router-link to="/signup">Signup</router-link>
+              <router-link to="/signup">Signup</router-link>&nbsp&nbsp|&nbsp&nbsp
+              <router-link to="/signin">Signin</router-link>
             </div>            
           </div>
           <hr>

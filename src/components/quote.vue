@@ -39,9 +39,10 @@
 				this.editing = false
 			},
 			onDelete() {
+				const token = localStorage.getItem('token');
 				this.$emit('quoteDeleted', this.qt.id);
 				
-				axios.delete('http://penktas.app/api/quote/' + this.qt.id)
+				axios.delete('http://penktas.app/api/quote/' + this.qt.id + '?token=' + token)
 					.then(
 						response => console.log(response)
 					)
@@ -50,12 +51,12 @@
 					)
 			},
 			onUpdate() {
+				const token = localStorage.getItem('token');
 				this.editing = false;
 				this.qt.content = this.editValue;
 
-				axios.put('http://penktas.app/api/quote/' + this.qt.id, {
-					content: this.editValue
-				})
+				axios.put('http://penktas.app/api/quote/' + this.qt.id + '?token=' + token, 
+					{content: this.editValue})
 				.then(
 					response => console.log(response)
 				)

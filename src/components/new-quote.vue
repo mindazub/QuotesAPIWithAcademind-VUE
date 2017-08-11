@@ -24,7 +24,9 @@
 		},
 		methods: {
 			onSubmitted() {
-				axios.post('http://penktas.app/api/quote', {content: this.quoteContent})
+				const token = localStorage.getItem('token');
+				axios.post('http://penktas.app/api/quote?token=' + token, 
+					{content: this.quoteContent})
 				.then(
 						(response) => console.log(response)
 					)

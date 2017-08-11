@@ -5,6 +5,7 @@ import App from './App.vue'
 import Quotes from './components/quotes.vue'
 import NewQuote from './components/new-quote.vue'
 import Signup from './components/signup.vue'
+import Signin from './components/signin.vue'
 
 Vue.use(VueRouter);
 
@@ -12,7 +13,8 @@ Vue.use(VueRouter);
 const routes = [
 	{ path: '', component: Quotes },
 	{ path: '/new-quote', component: NewQuote},
-	{ path: '/signup', component: Signup }
+	{ path: '/signup', component: Signup },
+	{ path: '/signin', component: Signin }
 
 ];
 
